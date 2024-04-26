@@ -1,0 +1,10 @@
+<h1>Insertar producto</h1>
+<p>ID: <input type="number" [(ngModel)]="producto.idProducto"></p>
+<p>Nombre: <input type="text"  [(ngModel)]="producto.nombreProducto"></p>
+<p>Precio: <input type="number" [(ngModel)]="producto.precioUnitario"></p>
+<p><label>Descontinuado: </label>
+    <select [(ngModel)]="producto.discontinued">
+      <option value="1">Si</option>
+      <option value="0">No</option>
+    </select></p>
+<button (click)="insertar()">Insertar</button>

@@ -1,0 +1,9 @@
+<h1>Lista de productos</h1>
+@for (producto of productos; track $index) {
+    <ul>
+        <li>{{producto.idProducto}} {{producto.nombreProducto}} {{producto.precioUnitario}} @if(producto.discontinued==1){Descontinuado}@else {No descontinuado}</li>
+    </ul>
+}
+@empty {
+    <p>No hay datos</p>
+}
